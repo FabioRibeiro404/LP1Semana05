@@ -22,7 +22,9 @@ namespace MyGame
             for (int j = 0; j < enemyGroup.Length; j++)
             {
                 Enemy name = new Enemy(enemyGroup[j]);
-                
+                name.PickupPowerUp(30, PowerUp.Shield);
+                name.PickupPowerUp(40, PowerUp.Health);
+
                 Console.WriteLine($"{name.GetName()} {name.GetHealth()} {name.GetShield()}");
             }
         }

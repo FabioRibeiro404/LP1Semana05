@@ -60,7 +60,19 @@ namespace MyGame
             }
 
             return name;
+        }
 
+        public void PickupPowerUp(float amount, PowerUp type)
+        {
+            
+            if (type == PowerUp.Health)
+            {
+                health += amount;
+            }
+            if (type == PowerUp.Shield)
+            {
+                shield += amount;
+            }
         }
     }
 }
