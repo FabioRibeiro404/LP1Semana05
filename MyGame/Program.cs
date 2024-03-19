@@ -17,22 +17,14 @@ namespace MyGame
                 Console.Write($"Nome do inimigo {enemies}: ");
                 enemyGroup[i] = Console.ReadLine();
             }
-            /*
+            
             //Pega nos nomes e cria o inimigo
-            for (int j = 0; j < numEnemies.Length; j++)
+            for (int j = 0; j < enemyGroup.Length; j++)
             {
                 Enemy name = new Enemy(enemyGroup[j]);
-                name.SetName(enemyGroup[j]);
-                Console.WriteLine($"{name.GetName(name.GetHealth)} {} {name.GetShield}");
+                
+                Console.WriteLine($"{name.GetName()} {name.GetHealth()} {name.GetShield()}");
             }
-            */
-            /*
-            Enemy loki = new Enemy("Loki");
-
-            loki.SetName("Loki");
-
-            Console.WriteLine($"Name is {loki.GetName()} and HP is {loki.GetHealth()}");
-            */
         }
     }
 }
