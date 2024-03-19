@@ -23,6 +23,16 @@ namespace MyGame
             return name;
         }
 
+        public float GetHealth()
+        {
+            return health;
+        }
+
+        public float GetShield()
+        {
+            return shield;
+        }
+
         public void TakeDamage(float damage)
         {
             shield -= damage;
@@ -35,6 +45,22 @@ namespace MyGame
                 if(health < 0)
                     health = 0;
             }
+        }
+        public string SetName(string name)
+        {
+            int lengthName = name.Length;
+            if (lengthName > 9)
+            {
+                Console.WriteLine("Exceeded maximum length...");
+                this.name = "";
+            }
+            else
+            {
+                this.name = name;
+            }
+
+            return name;
+
         }
     }
 }
