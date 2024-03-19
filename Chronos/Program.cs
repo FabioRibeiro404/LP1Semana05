@@ -24,7 +24,7 @@ namespace Chronos
 
             Console.WriteLine($"Time 1: {ts1.Seconds},{ts1.Milliseconds:d3}");
 
-            //Console.WriteLine($"Time 2: {ts2:f3}");
+            Console.WriteLine($"Time 2: {ts2.Seconds},{ts2.Milliseconds:d3}");
         }
     }
 }
