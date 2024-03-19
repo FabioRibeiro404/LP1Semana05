@@ -27,6 +27,7 @@ namespace MyGame
                 name.TakeDamage(50);
 
                 Console.WriteLine($"{name.GetName()} {name.GetHealth()} {name.GetShield()}");
+                Console.WriteLine(name.GetTotalPowerUps());
             }
         }
     }
