@@ -7,7 +7,7 @@ namespace MyGameFriday
 {
     public class GameLevel
     {
-
+        
         private int numEnemies = 0;
         private int numRooms = 0;
         private Difficulty level;
@@ -47,14 +47,12 @@ namespace MyGameFriday
         {
             for (int i = 0; i < rooms.Length; i++ )
             {
-                if(rooms[i] == "")
+                if(!string.IsNullOrEmpty(rooms[i]))
                 {
-                    continue;
-                   //Console.WriteLine($"Room {i}: {rooms[i]}"); 
-                }
-                else
-                    Console.WriteLine($"Room {i}: {rooms[i]}"); 
                     //continue;
+                   Console.WriteLine($"Room {i}: {rooms[i]}"); 
+                }
+                
             
             }
 
